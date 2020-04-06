@@ -44,7 +44,20 @@ plugins:
   - jekyll-paginate
   - liquid-md5
   - jekyll/tagging
-# dash:
+dash:
+  social_links:
+    - url: https://youtube.com/helda-game
+      icon: youtube-square
+      color: red
+    - url: https://twitter.com/legkvla
+      icon: twitter-square
+      color: cyan
+    - url: https://legkvla.itch.io
+      icon: itch-io
+      color: red
+    - url: https://github.com/helda-game
+      icon: github-square
+      color: purple
   # date_format: "%Y-%b-%-d"
 # Exclude from processing.
 # The following items will not be processed, by default.

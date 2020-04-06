@@ -4,16 +4,35 @@
   {%- include head.html -%}
 
   <!-- <body style="background-image:url('/assets/img1.jpg')"> -->
-  <body>
+  <body style="background: url(assets/img1.jpg)">
 
-    {%- include header.html -%}
+    <div class="site-header" style="background:#15171A;">
+      <div class="wrapper">
+        <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}<b class="command_prompt"></b><b class="blinking_cursor">_</b></a>
+        <span class="social_links">
+            <a href="/about/" style="font-size: 18px" class="color-pink-hover">
+              <!-- <i class="fab fa-info-circle"></i>&nbsp; -->
+              About</a>
+            {% for link in site.dash.social_links %}<a class="color-{{ link.color }}-hover" href="{{ link.url }}"><i class="fab fa-{{ link.icon }}"></i></a>{% endfor %}
+        </span>
+      </div>
+    </div>
+    <!-- <br/> -->
+    <br/>
+    <br/>
       <main class="page-content" aria-label="Content">
-        <div class="wrapper">
+        <div class="wrapper" style="background:#1E2227; padding: 20px;">
           {{ content }}
         </div>
       </main>
 
-      {%- include footer.html -%}
+      <footer class="site-footer">
+        <div class="wrapper" style="background:#1E2227;padding: 20px">
+          <div class="credits"><a href="https://github.com/bitbrain/jekyll-dash">dash</a> theme for Jekyll by <a href="https://github.com/bitbrain">bitbrain</a> made with <i class="fas fa-heart"></i>
+            {%- include theme-toggle.html -%}
+          </div>
+        </div>
+      </footer>
       <script>
         window.FontAwesomeConfig = {
           searchPseudoElements: true
