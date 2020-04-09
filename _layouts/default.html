@@ -12,9 +12,6 @@
         <div class="wrapper" style="height: 100%; background:url(/assets/p2.png) no-repeat; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;padding: 70px;">
           <div>
           <span class="social_links">
-              <!-- <a href="/about/" style="font-size: 18px">
-                <!-- <i class="fab fa-info-circle"></i>&nbsp; -->
-                <!-- About</a> -->
               {% for link in site.dash.social_links %}<a class="color-{{ link.color }}-hover" href="{{ link.url }}"><i class="fab fa-{{ link.icon }}"></i></a>{% endfor %}
           </span>
           </div>
