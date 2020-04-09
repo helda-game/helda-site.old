@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: HELDA GAME
+title: Helda Game
 email: vladimir.legkunets@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Build your own game and learn coding!
@@ -37,13 +37,17 @@ tag_page_layout: tag_page
 tag_page_dir: tag
 
 # Build settings
-theme: jekyll-dash
+# theme: jekyll-dash
+theme: moving
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-paginate
-  - liquid-md5
-  - jekyll/tagging
+  # - jekyll-paginate
+  # - liquid-md5
+  # - jekyll/tagging
+moving:
+  social_links:
+    github: helda-game
 dash:
   social_links:
     - url: https://youtube.com/helda-game
